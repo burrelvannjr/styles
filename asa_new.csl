@@ -233,11 +233,11 @@
         </else-if>
         <else-if type="chapter paper-conference" match="any">
           <group delimiter=" ">
-            <text macro="title" prefix=" " suffix="."/>
+            <text macro="title" text-case="title" prefix=" " suffix="."/>
             <group delimiter=", " suffix=".">
               <group delimiter=" ">
                 <text macro="pages"/>
-                <text term="in" text-case="title"/>
+                <text term="in" text-case="lowercase"/>
                 <group delimiter=". ">
                   <text variable="container-title" font-style="italic"/>
                   <text macro="volume"/>
