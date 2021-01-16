@@ -243,7 +243,7 @@
                   <text macro="volume"/>
                 </group>
               </group>
-              <text variable="collection-title" font-style="italic"/>
+              <text variable="collection-title" font-style="italic" text-case="title"/>
               <text macro="editor"/>
             </group>
             <text macro="publisher"/>
