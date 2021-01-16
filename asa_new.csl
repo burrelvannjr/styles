@@ -237,7 +237,7 @@
             <group delimiter=", " suffix=".">
               <group delimiter=" ">
                 <text macro="pages"/>
-                <text term="in" text-case="lowercase"/>
+                <text term="in" text-case="title"/>
                 <group delimiter=". ">
                   <text variable="container-title" font-style="italic"/>
                   <text macro="volume"/>
