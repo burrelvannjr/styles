@@ -64,9 +64,10 @@
       <choose>
         <if type="webpage post-weblog post misc" match="any">
           <group delimiter=" ">
-            <text term="retrieved" text-case="title"/>
+            <!--<text term="retrieved" text-case="title"/>
             <date variable="accessed" form="text"/>
-            <text prefix="(" suffix=")" variable="URL"/>
+            <text prefix="(" suffix=")" variable="URL"/> -->
+            <text variable="howpublished"/>
           </group>
         </if>
         <else-if type="article-journal" match="any">
@@ -221,7 +222,7 @@
             <text macro="publisher"/>
           </group>
         </else-if>
-        <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+        <else-if type="bill book graphic legal_case legislation motion_picture report song misc" match="any">
           <group delimiter=". ">
             <text macro="title" prefix=" "/>
             <text macro="volume"/>
