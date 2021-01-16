@@ -67,7 +67,7 @@
             <!--<text term="retrieved" text-case="title"/>
             <date variable="accessed" form="text"/>
             <text prefix="(" suffix=")" variable="URL"/> -->
-            <text variable="howpublished"/>
+            <date variable="howpublished" text-case="title"//>
           </group>
         </if>
         <else-if type="article-journal" match="any">
